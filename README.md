@@ -41,10 +41,19 @@ Ensure you have the required tools, such as Visual Studio Code, DotNet CLI, and 
 Usage
 This project is structured to guide developers in building a fully functional application from start to finish. The README does not cover specific course details but focuses on providing a hands-on experience in developing with ASP.NET Core and React.
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 Acknowledgments
 Inspiration: Practical application development
 Tools and frameworks used: ASP.NET Core, React, TypeScript, MobX, etc.
 Security: Achieving an 'A' rating from a security scanning site is a notable achievement.
+
+How to run this project ?
+You should have NodeJS..Net Core insalled in your localhost machine Download NodeJS
+Open Terminal
+Navigate to Project Directory
+Enter the following command npm install this will install all required dependencies
+After the previous command is executed, Enter the following command npm start
+Wait for it to compile
+Open http://localhost:3000 to view it in the browser.
+Enjoy the visualiser
+This project was bootstrapped with Vite.js.
