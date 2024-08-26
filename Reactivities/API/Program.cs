@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Persistence;
 using API.Extensions;
 {
-    
+
 }
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,9 +24,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+app.UseRouting();
 
-app.UseCors("CorsPolicy");
+// app.UseCors("CorsPolicy");
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
@@ -44,7 +46,7 @@ try
 catch (Exception ex)
 {
     var logger = services.GetRequiredService<ILogger<Program>>();
-    logger.LogError(ex,"An error occurred during migration!");
+    logger.LogError(ex, "An error occurred during migration!");
 }
 
 app.Run();
